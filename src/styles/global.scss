@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--main-bg-color);
+}
+.section {
+  margin-top: 100px;
+}
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 15px;
+  transition: all 1s ease;
+}
+.container {
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+  font-family: "Alumni Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  /* white main */
+  color: var(--white-main);
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+.error {
+  position: absolute;
+  top: 30px;
+  color: red;
+  text-align: center;
+  align-items: center;
+}
+
+// GLOBAL STYLES
+
+@media screen and (max-width: 1000px) {
+  .section {
+    margin-top: 80px;
+  }
+}

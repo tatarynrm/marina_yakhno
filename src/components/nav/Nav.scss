@@ -1,0 +1,40 @@
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+
+  &-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+  }
+  &-menu {
+    display: flex;
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      gap: 50px;
+    }
+    &-menu {
+      width: 100%;
+      background-color: rgb(193, 78, 78);
+      position: absolute;
+      display: none;
+      flex-direction: column;
+      gap: 55px;
+      top: 100px;
+    }
+  }
+}

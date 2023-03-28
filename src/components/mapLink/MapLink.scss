@@ -1,0 +1,48 @@
+.map-link {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  img {
+    animation: bounce 4s infinite;
+  }
+  span {
+    font-family: "Alumni Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #eaeef2;
+  }
+  &-footer {
+    span {
+      font-family: "Alumni Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #eaeef2;
+    }
+    img {
+      animation: bounce 4s infinite;
+    }
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(-10px);
+    }
+    50% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .map-link {
+    display: none;
+    color: black;
+  }
+}

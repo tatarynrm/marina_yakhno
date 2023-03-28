@@ -1,0 +1,35 @@
+.burger__menu {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #13293d;
+  &-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    right: 30px;
+  }
+  &-wrapper {
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 55px;
+      font-family: "Alumni Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 26px;
+      color: #ffffff;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+  }
+}

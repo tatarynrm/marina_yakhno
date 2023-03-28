@@ -1,0 +1,111 @@
+.hero {
+  background-image: url("../../assets/images/hero-background.jpg");
+  background-size: cover;
+  position: relative;
+
+  &__container {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__main-info {
+    position: relative;
+    margin-top: 115px;
+    // background-color: rgba(176, 176, 176, 0.7);
+    width: 60%;
+    &-title {
+      font-family: "Alumni Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 72px;
+      line-height: 86px;
+      color: #eaeef2;
+    }
+    &-p {
+      font-family: "News Cycle";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 36px;
+      margin-top: 20px;
+      /* white main */
+
+      color: #eaeef2;
+    }
+    &-button {
+      margin-top: 40px;
+      background: linear-gradient(
+        234.29deg,
+        #0093f9 29.09%,
+        rgba(38, 60, 255, 0) 130.41%,
+        rgba(176, 176, 176, 0) 217.96%
+      );
+      border: none;
+      border-radius: 10px;
+      padding: 20px 100px;
+      font-family: "Alumni Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 43px;
+      color: #ffffff;
+      cursor: pointer;
+      transition: all 0.4s ease;
+    }
+    &-button:hover {
+      background: linear-gradient(
+        234.29deg,
+        #58bbff 29.09%,
+        rgba(38, 60, 255, 0) 130.41%,
+        rgba(176, 176, 176, 0) 217.96%
+      );
+      border-radius: 10px;
+      transition: all 0.4s ease;
+    }
+  }
+  &__main-info::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 500px;
+    background: url("../../assets/images/decor-line-main.svg");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 1386px) {
+  .hero {
+    &__main-info::after {
+      content: "";
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hero {
+    background-image: url("../../assets/images/hero-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    &__main-info-button {
+      padding: 1rem 2rem;
+    }
+    &__main-info {
+      margin-top: 50px;
+
+      &-title {
+        font-family: "Alumni Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 52px;
+        line-height: 46px;
+        color: #eaeef2;
+      }
+    }
+  }
+}

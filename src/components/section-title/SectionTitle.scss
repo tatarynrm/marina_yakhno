@@ -1,0 +1,24 @@
+.section__title {
+  &-item {
+    /* decor blue */
+
+    background: #16324f;
+    border-radius: 0px 0px 10px 10px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  h2 {
+    font-family: "Alumni Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 67px;
+
+    /* white main */
+
+    color: #eaeef2;
+  }
+}

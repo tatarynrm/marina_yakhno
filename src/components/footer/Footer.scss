@@ -1,0 +1,144 @@
+.footer {
+  background: #13293d;
+  height: 660px;
+  .container {
+    height: 100%;
+    display: flex;
+  }
+  &__left {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 0px;
+
+    img {
+      width: 90px;
+      height: 50px;
+      cursor: pointer !important;
+    }
+    a {
+      font-family: "Alumni Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 34px;
+      /* identical to box height */
+
+      color: #ffffff;
+      cursor: pointer !important;
+    }
+  }
+  &__center {
+    width: 45%;
+  }
+  &__right {
+    width: 60%;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-bottom {
+      display: flex;
+      justify-content: flex-end;
+    }
+    &-map {
+      display: none;
+    }
+
+    &-top {
+      display: flex;
+      gap: 40px;
+      justify-content: flex-end;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+
+      ul {
+        display: flex;
+        gap: 40px;
+        a {
+          font-family: "Alumni Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 22px;
+          color: #eaeef2;
+        }
+      }
+    }
+  }
+
+  &__socials-hidden {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1386px) {
+  .footer {
+    &__left {
+    }
+    &__center {
+    }
+    &__right {
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+      &-top {
+        ul {
+          display: flex;
+          flex-direction: column;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      &-bottom {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .footer {
+    height: 100%;
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer__left {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+    }
+    .footer__center {
+      width: 70%;
+    }
+    .footer__left {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+@media screen and (max-width: 568px) {
+  .footer {
+    .footer__center {
+      width: 90%;
+    }
+  }
+}

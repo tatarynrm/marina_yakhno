@@ -1,0 +1,116 @@
+.services {
+  background: #dbedff;
+  &__cards {
+    margin: auto;
+    margin-top: 80px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 150px;
+  }
+
+  &__card {
+    width: 24%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &-photo {
+      height: 100%;
+      border: 2px solid #3e92cc;
+      filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.2));
+      border-radius: 5px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &-desc {
+      margin-top: 20px;
+      font-family: "News Cycle";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 39px;
+      color: #000000;
+      cursor: inherit;
+    }
+  }
+}
+
+@media screen and (max-width: 1226px) {
+  .services {
+    background: #dbedff;
+    &__cards {
+      margin: auto;
+      margin-top: 80px;
+      padding-bottom: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 120px;
+    }
+    &__card {
+      width: 24%;
+      display: flex;
+      flex-direction: column;
+
+      &-photo {
+        width: 100%;
+        border: 2px solid #3e92cc;
+        filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.2));
+        border-radius: 5px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &-desc {
+        margin-top: 20px;
+        font-family: "News Cycle";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 25px;
+        word-spacing: normal;
+        color: #000000;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1076px) {
+  .services {
+    &__cards {
+      margin: auto;
+      margin-top: 80px;
+      padding-bottom: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 100px;
+    }
+    &__card {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services {
+    &__cards {
+      margin: auto;
+      margin-top: 80px;
+      gap: 20px;
+    }
+    &__card {
+      margin: auto;
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

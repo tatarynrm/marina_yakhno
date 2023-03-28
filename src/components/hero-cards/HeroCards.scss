@@ -1,0 +1,96 @@
+.hero__cards {
+  width: 60%;
+  justify-content: center;
+  margin: 0 auto;
+  display: flex;
+  gap: 90px;
+  margin-top: 40px;
+  &-card {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(16.5px);
+    border-radius: 10px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding: 1rem 2rem;
+
+    p {
+      width: 200px;
+      font-family: "News Cycle";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 36px;
+
+      /* dark blue */
+
+      color: #13293d;
+
+      /* Inside auto layout */
+
+      flex: none;
+      order: 0;
+      flex-grow: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hero__cards {
+    width: 40%;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    &-card {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 0.4rem;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero__cards {
+    width: 45%;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    // gap: 40px;
+    margin-top: 40px;
+    &-card {
+      margin: 0 auto;
+      width: 70%;
+      display: flex;
+      gap: 30px;
+      padding: 1rem;
+      h3 {
+        // font-size: 40px;
+      }
+      img {
+        // display: none;
+        // width: 20%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 648px) {
+  .hero__cards {
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+    &-card {
+      width: 100%;
+
+      h3 {
+        font-size: 40px;
+      }
+    }
+  }
+}

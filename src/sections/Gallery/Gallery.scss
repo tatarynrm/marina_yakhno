@@ -1,0 +1,99 @@
+.slider {
+  //   display: flex;
+  //   justify-content: space-between;
+  &__item {
+    position: relative;
+    width: 350px;
+    height: 420px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 1px solid #3e92cc;
+    // border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+    }
+    h3 {
+      position: absolute;
+      background-color: red;
+      width: 100%;
+      bottom: 0;
+      padding: 20px 70px;
+      background: rgba(213, 227, 238, 0.6);
+      backdrop-filter: blur(7.5px);
+      font-family: "Alumni Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 25px;
+      color: #000000;
+      border: 1px solid #3e92cc;
+    }
+  }
+}
+
+.slick-slide {
+  //   display: flex;
+  //   gap: 20px;
+  //   div {
+  //     display: flex;
+  //     gap: 20px;
+  //   }
+}
+
+.slick-slider {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.slick-track {
+}
+.slick-list {
+  //   background-color: red;
+  //   display: flex;
+  //   gap: 20px;
+}
+
+.slick-dots {
+  //   ul {
+  //     display: none;
+  //   }
+}
+.slick-dots li button:before {
+  background: #958d8d;
+  border-radius: 10px;
+  font-size: 0px;
+}
+
+.slick-dots li button:before {
+  content: "";
+  font-family: "slick";
+  font-size: 0px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  opacity: 0.25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slider__item {
+  //   display: flex;
+  //   background-color: red;
+}
