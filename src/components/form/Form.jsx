@@ -31,8 +31,8 @@ const Form = () => {
       return alert("Заповніть усі поля");
     }
     try {
-      const text = `<i>Дата: ${values.date}</i>%0AІм'я: ${values.name}%0A<b>Номер телефону:</b> <code>${values.number}</code>%0AEmail: ${values.email}`;
-      const link = `https://api.telegram.org/bot${process.env.REACT_APP_BOT_TOKEN}/sendMessage?chat_id=5495860479&text=${text}&parse_mode=html`;
+      const text = `---НОВА ЗАЯВКА---%0A<i>Дата: ${values.date}</i>%0AІм'я: ${values.name}%0A<b>Номер телефону:</b> <code>${values.number}</code>%0AEmail: ${values.email}`;
+      const link = `https://api.telegram.org/bot${process.env.REACT_APP_BOT_TOKEN}/sendMessage?chat_id=978816433&text=${text}&parse_mode=html`;
       console.log(link);
       const data = await axios.get(link);
       if (data.status === 200) {

@@ -9,11 +9,21 @@ import servicePhoto5 from "../../assets/images/services5.jpg";
 
 const servicesData = [
   { img: servicePhoto1, text: "Зварювання металу та металоконструкцій" },
-  { img: servicePhoto2, text: "Зварювання металу та металоконструкцій" },
-  { img: servicePhoto3, text: "Зварювання металу та металоконструкцій" },
-  { img: servicePhoto4, text: "Зварювання металу та металоконструкцій" },
-  { img: servicePhoto5, text: "Зварювання металу та металоконструкцій" },
-  { img: servicePhoto1, text: "Зварювання металу та металоконструкцій" },
+  { img: servicePhoto2, text: "Порошкове фарбування металу" },
+  { img: servicePhoto3, text: "Гнуття металу" },
+  {
+    img: servicePhoto4,
+    text: "Лазерний розкрій/різка металу на лазерному верстаті",
+  },
+  {
+    img: servicePhoto5,
+    text: `Розробка та 3д моделювання пристроїв, деталей та механізмів будь-якої складності.`,
+    text2: "Підготовка креслень та технічної документації",
+  },
+  {
+    img: servicePhoto1,
+    text: "Лазерне зварювання кольорових та чорних металів",
+  },
 ];
 const Services = () => {
   return (
@@ -27,6 +37,9 @@ const Services = () => {
                 <img src={item.img} alt="services" />
               </div>
               <p className="services__card-desc">{item.text}</p>
+              {item.text2 ? (
+                <p className="services__card-desc">{item.text2}</p>
+              ) : null}
             </div>
           );
         })}

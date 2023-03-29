@@ -107,10 +107,19 @@
       gap: 20px;
     }
     &__card {
+      position: relative;
       margin: auto;
       width: 70%;
       display: flex;
       flex-direction: column;
+    }
+    &__card::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: #3e92cc;
+      bottom: -10px;
     }
   }
 }
