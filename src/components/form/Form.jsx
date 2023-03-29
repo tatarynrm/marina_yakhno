@@ -27,10 +27,12 @@ const Form = () => {
     if (checked === false) {
       return alert("Надайте згоду на обробку персональних даних");
     }
-    if (values.name === "" || values.email === "" || values.number === "") {
+    if (values.name === "" || values.number === "") {
       return alert("Заповніть усі поля");
     }
     try {
+      const romanId = "5495860479";
+      const marynaId = "978816433";
       const text = `---НОВА ЗАЯВКА---%0A<i>Дата: ${values.date}</i>%0AІм'я: ${values.name}%0A<b>Номер телефону:</b> <code>${values.number}</code>%0AEmail: ${values.email}`;
       const link = `https://api.telegram.org/bot${process.env.REACT_APP_BOT_TOKEN}/sendMessage?chat_id=978816433&text=${text}&parse_mode=html`;
       console.log(link);
@@ -48,7 +50,7 @@ const Form = () => {
   };
   return (
     <>
-      <form onSubmit={onSubmit} id="contacts" className="form">
+      <form onSubmit={onSubmit} id="contacts" className="form" novalidate>
         <h2 className="form__title">Форма зворотнього зв'язку</h2>
         <div className="form__body">
           <p className="form__info">
