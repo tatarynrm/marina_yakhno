@@ -1,36 +1,101 @@
 .about {
-  &__block {
-    padding-top: 80px;
-    width: 80%;
-    margin: 0 auto;
+  .double__photo {
+    position: relative;
 
-    &-top {
+    display: flex;
+    width: 100%;
+    // background-color: red;
+    img {
+      width: 100%;
+      height: 500px;
+      object-fit: contain;
+    }
+
+    .absolute__photo {
+      position: absolute;
+      top: -100px;
+      left: -300px;
+      z-index: 9999;
+    }
+  }
+  &__block {
+    margin-top: 80px;
+
+    &-section {
       display: flex;
       justify-content: space-between;
+      margin-top: 80px;
 
-      &-image {
-        // width: 570px;
-        width: 100%;
+      &-img {
+        width: 50%;
+        height: 100%;
 
         img {
           width: 100%;
           height: 100%;
-          object-fit: contain;
-          border-radius: 10px;
+          object-fit: cover;
+          object-position: center;
         }
       }
-
       &-text {
-        padding-left: 350px;
-        p {
+        width: 50%;
+        padding: 0rem 1rem;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+
+        font-family: "News Cycle";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 39px;
+
+        /* dark blue */
+
+        color: #13293d;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about {
+    .absolute__photo {
+      display: none;
+    }
+    &__block {
+      margin-top: 50px;
+
+      &-section {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        // justify-content: space-between;
+        flex-direction: column;
+        margin-top: 80px;
+
+        &-img {
+          width: 100%;
+          height: 100%;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+        &-text {
+          width: 100%;
+          padding: 0rem 1rem;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
           font-family: "News Cycle";
           font-style: normal;
           font-weight: 400;
           font-size: 24px;
           line-height: 39px;
-
-          /* dark blue */
-
           color: #13293d;
         }
       }
