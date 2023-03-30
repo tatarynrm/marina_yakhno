@@ -21,16 +21,18 @@
       font-weight: 400;
       font-size: 22px;
       line-height: 36px;
-
-      /* dark blue */
-
       color: #13293d;
-
-      /* Inside auto layout */
-
       flex: none;
       order: 0;
       flex-grow: 1;
+    }
+    h3 {
+      font-family: "Oswald";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 68px;
+      line-height: 101px;
+      color: #13293d;
     }
   }
 }
