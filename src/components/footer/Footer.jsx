@@ -24,8 +24,16 @@ const Footer = () => {
           <div className="footer__socials-hidden">
             <Social />
           </div>
+        </div>
+        <div className="footer__contacts">
           <a href="tel:+380968318989" className="footer__left-contact">
-            +38096 831 89 89
+            +380 96 831 89 89
+          </a>
+          <a
+            href="mailto:emilytechmain@gmail.com"
+            className="footer__left-contact"
+          >
+            emilytechmain@gmail.com
           </a>
         </div>
         <div className="footer__center">
